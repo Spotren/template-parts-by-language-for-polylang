@@ -64,3 +64,15 @@ php bin/smoke-test.php /absolute/path/to/wordpress
 - Custom attribute: `tplbypolylangOverrides`
 - Format: `{ "pt": "hero-br", "en": "hero-en" }`
 - Fallback: if Polylang is unavailable, the language has no mapping, or the mapped template part does not exist, the original template part is rendered.
+
+## Changelog
+
+### 0.1.1
+
+- Restrict `Language Overrides` controls to template editing contexts.
+- Show a contextual sidebar notice in page editing that links to the template where overrides must be edited.
+- Resolve template links for pages that use the theme template hierarchy, including default page and front page templates.
+
+### 0.1.0
+
+- Initial release.

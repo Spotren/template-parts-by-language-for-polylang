@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Template Parts by Language for Polylang
  * Description:       Adds per-language template part overrides to the Template Part block when Polylang is active.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Author:            OpenAI Codex
@@ -15,7 +15,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'TPLBYPOLYLANG_VERSION', '0.1.0' );
+define( 'TPLBYPOLYLANG_VERSION', '0.1.1' );
 define( 'TPLBYPOLYLANG_PLUGIN_FILE', __FILE__ );
 define( 'TPLBYPOLYLANG_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'TPLBYPOLYLANG_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -100,7 +100,12 @@ function tplbypolylang_register_editor_assets() {
 
 	$config = array(
 		'languagesPath' => '/' . tplbypolylang_get_rest_namespace() . '/languages',
-		'attribute' => TPLBYPOLYLANG_ATTRIBUTE,
+		'attribute'     => TPLBYPOLYLANG_ATTRIBUTE,
+		'activeTheme'   => get_stylesheet(),
+		'siteEditorUrl' => admin_url( 'site-editor.php' ),
+		'showOnFront'   => (string) get_option( 'show_on_front', 'posts' ),
+		'pageOnFront'   => (int) get_option( 'page_on_front', 0 ),
+		'pageForPosts'  => (int) get_option( 'page_for_posts', 0 ),
 	);
 
 	wp_add_inline_script(
