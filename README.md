@@ -43,21 +43,6 @@ php bin/smoke-test.php /absolute/path/to/wordpress
 - Compiled Gutenberg assets are generated into `build/` by `@wordpress/scripts`.
 - The editor reads template parts from WordPress core data and languages from the plugin REST endpoint.
 
-## Distribution Notes
-
-- Include the compiled `build/` directory in any ZIP release.
-- Do not include `node_modules/` in the distributable package.
-- If `build/index.js` is missing, the plugin will show an admin notice and skip loading the editor UI.
-- The generated `template-parts-by-language-for-polylang.zip` is a release artifact and should not be committed.
-- A GitHub Actions workflow is included at `.github/workflows/release.yml` to build and attach the ZIP on GitHub releases.
-
-## Release Checklist
-
-1. Run `npm run build`.
-2. Run `php bin/smoke-test.php /absolute/path/to/wordpress`.
-3. Confirm the Site Editor sidebar loads and lists the expected template parts.
-4. Generate the distributable archive with `npm run plugin-zip`.
-
 ## Runtime Behavior
 
 - Base block: `core/template-part`
