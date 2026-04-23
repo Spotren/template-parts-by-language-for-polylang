@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name:       Template Parts by Language for Polylang
+ * Plugin URI:        https://github.com/Spotren/template-parts-by-language-for-polylang
  * Description:       Adds per-language template part overrides to the Template Part block when Polylang is active.
  * Version:           0.1.1
  * Requires at least: 6.5
