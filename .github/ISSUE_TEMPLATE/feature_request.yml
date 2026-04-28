@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an improvement to the plugin
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the use case first. Requests tied to a real multilingual template workflow are easier to evaluate.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or limitation
+      description: What workflow is blocked or harder than it should be?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Share theme, block editor context, or examples if relevant.
