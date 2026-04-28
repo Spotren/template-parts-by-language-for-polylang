@@ -52,6 +52,10 @@ php bin/smoke-test.php /absolute/path/to/wordpress
 
 ## Changelog
 
+### 0.1.2
+
+- Add community health files for contributors, security reporting, support guidance, and pull request intake.
+
 ### 0.1.1
 
 - Restrict `Language Overrides` controls to template editing contexts.
