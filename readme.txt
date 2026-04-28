@@ -4,7 +4,7 @@ Tags: polylang, block editor, site editor, template parts, multilingual
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,10 @@ The overrides are ignored and the original template part continues to render.
 Not in this version. Overrides apply on frontend render, while the editor preview keeps the base template part.
 
 == Changelog ==
+
+= 0.1.2 =
+
+* Added community health files for contribution guidelines, security reporting, support guidance, issue templates, and pull request intake.
 
 = 0.1.1 =
 

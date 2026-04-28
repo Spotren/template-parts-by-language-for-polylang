@@ -3,7 +3,7 @@
  * Plugin Name:       Template Parts by Language for Polylang
  * Plugin URI:        https://github.com/Spotren/template-parts-by-language-for-polylang
  * Description:       Adds per-language template part overrides to the Template Part block when Polylang is active.
- * Version:           0.1.1
+ * Version:           0.1.2
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Author:            Spotren
@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'TPLBYPOLYLANG_VERSION', '0.1.1' );
+define( 'TPLBYPOLYLANG_VERSION', '0.1.2' );
 define( 'TPLBYPOLYLANG_PLUGIN_FILE', __FILE__ );
 define( 'TPLBYPOLYLANG_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'TPLBYPOLYLANG_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
